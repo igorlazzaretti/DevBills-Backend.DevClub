@@ -35,10 +35,12 @@ var __importStar = (this && this.__importStar) || (function () {
 Object.defineProperty(exports, "__esModule", { value: true });
 // Importa o express da Biblioteca express
 const express_1 = __importStar(require("express"));
+const routes_1 = require("./routes");
 // Cria uma instância do express
 const app = (0, express_1.default)();
 // Use o json para fazer o parse do corpo da requisição
 app.use((0, express_1.json)());
+app.use(routes_1.routes);
 app.listen(3333, () => {
     console.log('Server started on port 3333 🚀');
 });

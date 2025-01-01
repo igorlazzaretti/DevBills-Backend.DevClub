@@ -1,18 +1,29 @@
 <!-- Comandos
-
-    npm init -y
-
+   Iniciando o projeto
+   $ npm init -y
+   Instalando o Typescript e o Script para transpilar
     npm install -D typescript
     npx tsc --init
-
+   Iniciando o projeto Node com o Express
     npm i express
-
+   Para o expresse entender o typescript
     npm i -D @types/express
 
-    Configure o server.ts e transpile e rode
-    npx tsc 
-    node ./build/index.js
-    
+   Configure o server.ts e transpile e rode
+   $ npx tsc 
+   $ node ./build/index.js
+
+   ESlint
+   $ npm install -D eslint
+   
+   $ npx eslint --init
+
+   TSX
+   $ npm install -D tsx
+   
+   Sempre rodando
+   "scripts
+      "dev": "tsx --watch src/server.ts"
 
  -->
  <!-- :man_technologist: Dev Bill$ - Backend -->
